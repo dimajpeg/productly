@@ -1,0 +1,127 @@
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --primary-color: #f90;
+  --text-color-1: #2f281e;
+  --text-color-2: #544837;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-color-2);
+  margin: 0%;
+
+  ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  :link,
+  :visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 4px;
+    padding: 11px 24px;
+  }
+
+  .container {
+    max-width: 1110px;
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-block: 35px;
+
+  nav {
+    margin-left: auto;
+  }
+
+  ul {
+    display: flex;
+    gap: 27px;
+  }
+
+  .buttons {
+    margin-left: 53px;
+    display: flex;
+    gap: 14px;
+
+    .transparent {
+      background: transparent;
+      border: 1px solid #BCD0E5;
+      color: #173a56;
+      padding-block: 10px;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  padding-top: 12px;
+  justify-content: space-between;
+
+  .content {
+
+    h2 {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 123%;
+      color: var(--text-color-1);
+      margin-block: 83px 0px;
+
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 156%;
+      width: 458px;
+      margin-block: 30px 56px;
+    }
+
+    .action {
+      display: flex;
+      align-items: center;
+
+      button {
+        padding: 14px 41px 15px;
+        font-weight: 700;
+      }
+      
+      a {
+        font-family: var(--font-family);
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        color: var(--primary-color);
+        background-image: url("images/icons/play.svg");
+        background-repeat: no-repeat;
+        background-position-y: 2px;
+        padding-left: 28px;
+        margin-left: 31px;
+      }
+    }
+  }
+
+  img {
+    margin-right: -15px;
+  }
+}
